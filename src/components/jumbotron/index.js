@@ -4,12 +4,12 @@ import SearchBar from '../searchbar';
 function Jumbotron() {
 	return (
 		<div className="jumbotron mb-0">
-			<h1 className="display-4">Employee Directory</h1>
+			<h1 className="display-4 mb-5 text-center">Employee Directory</h1>
 			{/* <p class="lead">
 				This is a simple hero unit, a simple jumbotron-style component for
 				calling extra attention to featured content or information.
 			</p> */}
-			<hr className="my-4" />
+			{/* <hr className="my-4" /> */}
 			{/* <p>
 				It uses utility classes for typography and spacing to space content out
 				within the larger container.
