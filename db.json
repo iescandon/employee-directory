@@ -6,5 +6,21 @@
 		"email": "iescan4@gmail.com",
 		"birthday": "4/24/1988",
 		"imageUrl": "https://via.placeholder.com/150"
+	},
+	{
+		"id": 2,
+		"name": "test2name",
+		"phoneNumber": "test2number",
+		"email": "test2email",
+		"birthday": "test2bday",
+		"imageUrl": "https://via.placeholder.com/150"
+	},
+	{
+		"id": 3,
+		"name": "test3name",
+		"phoneNumber": "test3number",
+		"email": "test3email",
+		"birthday": "test3bday",
+		"imageUrl": "https://via.placeholder.com/150"
 	}
 ]
