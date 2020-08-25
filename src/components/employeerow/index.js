@@ -1,35 +1,31 @@
 import React from 'react';
 
-function Employee() {
+function Employee({ employees }) {
 	return (
 		<table className="table table-striped mt-0">
 			<thead>
 				<tr>
-					<th scope="col">#</th>
+					<th scope="col"></th>
 					<th scope="col">First</th>
 					<th scope="col">Last</th>
-					<th scope="col">Handle</th>
+					<th scope="col">Phone Number</th>
+					<th scope="col">E-mail</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<th scope="row">1</th>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<th scope="row">2</th>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-				</tr>
-				<tr>
-					<th scope="row">3</th>
-					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
-				</tr>
+				{employees.map((employee) => {
+					return (
+						<tr key={employee.id.value}>
+							<td>
+								<img src={employee.picture.medium} alt={employee.name.first} />
+							</td>
+							<td>{employee.name.first}</td>
+							<td>{employee.name.last}</td>
+							<td>{employee.cell}</td>
+							<td>{employee.email}</td>
+						</tr>
+					);
+				})}
 			</tbody>
 		</table>
 	);
