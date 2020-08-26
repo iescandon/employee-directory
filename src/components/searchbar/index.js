@@ -8,28 +8,14 @@ class Search extends Component {
 		search: '',
 		results: [],
 		filteredResults: [],
-		order: 'down',
 	};
 
-	// state = {
-	// 	search: '',
-	// 	results: [],
-	// 	filteredResults: [],
-	// 	order: [
-	// 		{ Image: 'down' },
-	// 		{ 'First Name': 'down' },
-	// 		{ 'Last Name': 'down' },
-	// 		{ 'Phone Number': 'down' },
-	// 		{ 'E-mail': 'down' },
-	// 	],
-	// };
-
 	tableHeaders = [
-		{ name: 'Image', sort: true },
-		{ name: 'First Name', sort: true },
-		{ name: 'Last Name', sort: true },
-		{ name: 'Phone Number', sort: true },
-		{ name: 'E-mail', sort: true },
+		{ name: 'Image' },
+		{ name: 'First Name' },
+		{ name: 'Last Name' },
+		{ name: 'Phone Number' },
+		{ name: 'E-mail' },
 	];
 
 	componentDidMount() {
@@ -63,25 +49,9 @@ class Search extends Component {
 		this.updateResults();
 	};
 
-	handleOrder = (header) => {
-		// console.log(header);
-		for (var i = 0; i < this.tableHeaders.length; i++) {
-			const currentHeader = this.tableHeaders[i].name;
-			// console.log(currentHeader);
-			if (header === currentHeader) {
-				if (this.state.order === 'down') {
-					this.setState({
-						order: 'up',
-					});
-				} else {
-					this.setState({
-						order: 'down',
-					});
-				}
-			}
-		}
-		// console.log(header);
-		// set state filtered search
+	handleSort = (order, name) => {
+		console.log(order, name);
+		//switch .sort
 	};
 
 	render() {
@@ -105,8 +75,9 @@ class Search extends Component {
 				<EmployeeRow
 					employees={this.state.filteredResults}
 					tableHeaders={this.tableHeaders}
-					order={this.state.order}
-					handleOrder={this.handleOrder}
+					handleSort={this.handleSort}
+					// order={this.state.order}
+					// handleOrder={this.handleOrder}
 				/>
 			</div>
 		);
