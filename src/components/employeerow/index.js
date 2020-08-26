@@ -37,7 +37,7 @@ function Employee({ employees, tableHeaders, order, handleOrder }) {
 				<tr>
 					{tableHeaders.map((header) => {
 						return (
-							<th key={header.name}>
+							<th key={header.name} className="header">
 								{header.name}
 								<i
 									className={`fa fa-caret-${order}`}

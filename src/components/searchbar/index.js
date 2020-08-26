@@ -64,10 +64,10 @@ class Search extends Component {
 	};
 
 	handleOrder = (header) => {
-		console.log(header);
+		// console.log(header);
 		for (var i = 0; i < this.tableHeaders.length; i++) {
 			const currentHeader = this.tableHeaders[i].name;
-			console.log(currentHeader);
+			// console.log(currentHeader);
 			if (header === currentHeader) {
 				if (this.state.order === 'down') {
 					this.setState({
@@ -80,7 +80,7 @@ class Search extends Component {
 				}
 			}
 		}
-		console.log(header);
+		// console.log(header);
 		// set state filtered search
 	};
 
