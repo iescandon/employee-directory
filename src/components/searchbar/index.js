@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import EmployeeRow from '../employeerow';
 import API from '../../utils/API';
-// import BootstrapTable from 'react-bootstrap-table-next';
 
 class Search extends Component {
 	state = {
@@ -76,8 +75,6 @@ class Search extends Component {
 					employees={this.state.filteredResults}
 					tableHeaders={this.tableHeaders}
 					handleSort={this.handleSort}
-					// order={this.state.order}
-					// handleOrder={this.handleOrder}
 				/>
 			</div>
 		);
