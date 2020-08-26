@@ -1,0 +1,20 @@
+.fa {
+	color: white;
+	font-size: larger;
+}
+
+.fa:hover {
+	color: rgb(17, 155, 235);
+	cursor: pointer;
+	font-size: larger;
+}
+
+.jumbotron {
+	background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);
+}
+
+.display-4 {
+	font-family: 'Alata', sans-serif;
+	font-weight: bold;
+	color: white;
+}
