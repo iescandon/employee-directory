@@ -36,6 +36,9 @@ class Search extends Component {
 			let values = Object.values(item).join('').toLowerCase();
 			return values.indexOf(filterSearch.toLowerCase()) !== -1;
 		});
+		// const filteredList = this.state.results.filter((item) =>
+		// 	item.match(filterSearch)
+		// );
 		this.setState({ filteredResults: filteredList });
 	};
 
@@ -49,7 +52,6 @@ class Search extends Component {
 	};
 
 	handleSort = (order, name) => {
-		console.log(order, name);
 		switch (name) {
 			// case 'Image':
 			// 	//sort
@@ -106,6 +108,7 @@ class Search extends Component {
 					});
 				}
 				break;
+			default:
 		}
 	};
 

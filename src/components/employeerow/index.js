@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from '../headerBars';
 
 function Employee({ employees, tableHeaders, handleSort }) {
@@ -7,7 +7,13 @@ function Employee({ employees, tableHeaders, handleSort }) {
 			<thead>
 				<tr>
 					{tableHeaders.map((header) => {
-						return <Header header={header} handleSort={handleSort} />;
+						return (
+							<Header
+								key={header.name}
+								header={header}
+								handleSort={handleSort}
+							/>
+						);
 					})}
 				</tr>
 			</thead>
