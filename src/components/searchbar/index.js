@@ -50,7 +50,28 @@ class Search extends Component {
 
 	handleSort = (order, name) => {
 		console.log(order, name);
-		//switch .sort
+		switch (name) {
+			case 'Image':
+				//sort
+				break;
+			case 'First Name':
+				this.setState({
+					filteredResults: this.state.filteredResults.sort((a, b) =>
+						a.name.first.localeCompare(b.name.first)
+					),
+				});
+
+				break;
+			case 'Last Name':
+				//sort
+				break;
+			case 'Phone Number':
+				//sort
+				break;
+			case 'E-mail':
+				//sort
+				break;
+		}
 	};
 
 	render() {
