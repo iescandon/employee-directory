@@ -51,25 +51,60 @@ class Search extends Component {
 	handleSort = (order, name) => {
 		console.log(order, name);
 		switch (name) {
-			case 'Image':
-				//sort
-				break;
+			// case 'Image':
+			// 	//sort
+			// 	break;
 			case 'First Name':
-				this.setState({
-					filteredResults: this.state.filteredResults.sort((a, b) =>
-						a.name.first.localeCompare(b.name.first)
-					),
-				});
-
+				if (order === 'down') {
+					this.setState({
+						filteredResults: this.state.filteredResults.sort((a, b) =>
+							a.name.first.localeCompare(b.name.first)
+						),
+					});
+				} else {
+					this.setState({
+						filteredResults: this.state.filteredResults.reverse(),
+					});
+				}
 				break;
 			case 'Last Name':
-				//sort
+				if (order === 'down') {
+					this.setState({
+						filteredResults: this.state.filteredResults.sort((a, b) =>
+							a.name.last.localeCompare(b.name.last)
+						),
+					});
+				} else {
+					this.setState({
+						filteredResults: this.state.filteredResults.reverse(),
+					});
+				}
 				break;
 			case 'Phone Number':
-				//sort
+				if (order === 'down') {
+					this.setState({
+						filteredResults: this.state.filteredResults.sort((a, b) =>
+							a.cell.localeCompare(b.cell)
+						),
+					});
+				} else {
+					this.setState({
+						filteredResults: this.state.filteredResults.reverse(),
+					});
+				}
 				break;
 			case 'E-mail':
-				//sort
+				if (order === 'down') {
+					this.setState({
+						filteredResults: this.state.filteredResults.sort((a, b) =>
+							a.email.localeCompare(b.email)
+						),
+					});
+				} else {
+					this.setState({
+						filteredResults: this.state.filteredResults.reverse(),
+					});
+				}
 				break;
 		}
 	};
