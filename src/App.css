@@ -28,3 +28,8 @@
 .table th {
 	vertical-align: middle;
 }
+
+#headerImage:hover {
+	color: white;
+	cursor: default;
+}

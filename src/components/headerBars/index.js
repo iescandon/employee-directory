@@ -17,7 +17,11 @@ function Header({ header, handleSort }) {
 	return (
 		<th key={header.name} className="header">
 			{header.name}
-			<i className={`fa fa-caret-${order}`} onClick={() => handleOrder()}></i>
+			<i
+				className={`fa fa-caret-${order}`}
+				id={`header${header.name}`}
+				onClick={() => handleOrder()}
+			></i>
 		</th>
 	);
 }
