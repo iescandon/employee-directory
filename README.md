@@ -6,7 +6,7 @@ https://iescandon.github.io/employee-directory/
 
 ## Description
 
-This application is a full-stack application designed as an employee directory using a web API and React. The user can search for specific employees or even sort in ascending or descending order, depending on first name, last name, phone number or email. Images and all data are presented in a table to allow for easier readability.
+This application is an application designed as an employee directory using a web API and React. The user can search for specific employees or even sort in ascending or descending order, depending on first name, last name, phone number or email. Images and all data are presented in a table to allow for easier readability.
 
 ## Table of Contents
 
